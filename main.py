@@ -27,5 +27,5 @@ def main():
     print(f"Decrypted message: {decrypted_message}")
 
 
-
-main()
+if __name__ == "__main__":
+    main()
