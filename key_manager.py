@@ -7,8 +7,8 @@ def generate_key():
         key_file.write(key)
 
 #opens key after reading it in binary format
-def load_key():
+def load_key() -> bytes:
     with open("encryption_key.key", "rb") as key_file:
-        return key_file.open()
+        return key_file.read()
 
 #generate the key one time and then use load_key as needed
